@@ -1,0 +1,18 @@
+<c:if test="${data.totalPages > 1}">
+<nav class="pager">
+  <c:forEach begin="0" end="${data.totalPages - 1}" var="i">
+    <c:url var="pageUrl" value="${pagerPath}">
+      <c:param name="q" value="${param.q}"/>
+      <c:param name="branchId" value="${param.branchId}"/>
+      <c:param name="from" value="${param.from}"/>
+      <c:param name="to" value="${param.to}"/>
+      <c:param name="sort" value="${sort}"/>
+      <c:param name="dir" value="${dir}"/>
+      <c:param name="size" value="${size}"/>
+      <c:param name="page" value="${i}"/>
+    </c:url>
+    <a href="${pageUrl}" class="${i == data.number ? 'active' : ''}">${i + 1}</a>
+  </c:forEach>
+</nav>
+</c:if>
+<p class="hint">Showing page ${data.number + 1} of ${data.totalPages == 0 ? 1 : data.totalPages} (${data.totalElements} records)</p>
