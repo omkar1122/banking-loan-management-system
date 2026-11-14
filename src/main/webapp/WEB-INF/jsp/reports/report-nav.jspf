@@ -1,0 +1,6 @@
+<p>
+  <a class="btn small secondary" href="${ctx}/reports/branch-totals">Branch deposits</a>
+  <a class="btn small secondary" href="${ctx}/reports/top-depositors">Top depositors</a>
+  <a class="btn small secondary" href="${ctx}/reports/overdue-emis">Overdue EMIs</a>
+  <a class="btn small secondary" href="${ctx}/reports/low-balance">Low balance</a>
+</p>
