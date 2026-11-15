@@ -653,15 +653,12 @@ The Banking & Loan Management System demonstrates how an enterprise Java web sta
 
 ---
 
-## 27. Source Code Repository
-
-The complete source code for this project is publicly available on GitHub:
-
-**GitHub Repository:** https://github.com/omkar1122/banking-loan-management-system
-
-The repository contains:
-- Full Spring Boot application source code (Java, JSP, CSS, JS)
-- Maven build configuration (`pom.xml`)
-- Database seed script (`sql/seed.sql`)
-- Automated test suite (21 test cases)
-- 22 incremental git commits documenting the development lifecycle
+## 27. References
+1. Spring Boot 3.2 Reference Documentation: https://docs.spring.io/spring-boot/docs/3.2.5/reference/html/
+2. Spring Data JPA Reference Guide: https://docs.spring.io/spring-data/jpa/docs/current/reference/html/
+3. Hibernate ORM 6.4 User Guide: https://docs.jboss.org/hibernate/orm/6.4/userguide/html_single/Hibernate_User_Guide.html
+4. Jakarta Bean Validation 3.0 Specification: https://jakarta.ee/specifications/bean-validation/3.0/
+5. MySQL 8.0 Reference Manual — Transaction Isolation & Locking: https://dev.mysql.com/doc/refman/8.0/en/
+6. Jakarta Standard Tag Library (JSTL) 3.0 Specification: https://jakarta.ee/specifications/tags/3.0/
+7. JUnit 5 User Guide: https://junit.org/junit5/docs/current/user-guide/
+8. Project Source Code (GitHub): https://github.com/omkar1122/banking-loan-management-system
