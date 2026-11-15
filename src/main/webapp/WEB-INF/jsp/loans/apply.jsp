@@ -2,7 +2,7 @@
 <div class="page-head"><h1>Loan application</h1></div>
 <script>
 var LOAN_TYPES = {
-<c:forEach items="${loanTypes}" var="lt" varStatus="s">"${lt.id}": {rate: ${lt.interestRate}, max: ${lt.maxTenureMonths}}${s.last ? '' : ','}
+<c:forEach items="${loanTypes}" var="ltype" varStatus="s">"${ltype.id}": {rate: ${ltype.interestRate}, max: ${ltype.maxTenureMonths}}${s.last ? '' : ','}
 </c:forEach>};
 </script>
 <form:form modelAttribute="loanApplicationForm" method="post" action="${ctx}/loans/apply" cssClass="card validate" novalidate="novalidate">
@@ -15,7 +15,7 @@ var LOAN_TYPES = {
   <div class="field"><label>Loan type</label>
     <form:select path="loanTypeId" required="required">
       <form:option value="" label="-- select loan type --"/>
-      <c:forEach items="${loanTypes}" var="lt"><form:option value="${lt.id}"><c:out value="${lt.name}"/> - ${lt.interestRate}%</form:option></c:forEach>
+      <c:forEach items="${loanTypes}" var="ltype"><form:option value="${ltype.id}"><c:out value="${ltype.name}"/> - ${ltype.interestRate}%</form:option></c:forEach>
     </form:select><form:errors path="loanTypeId" cssClass="err"/></div>
   <div class="field"><label>Disbursement account (must belong to the customer)</label>
     <form:select path="accountId" required="required">

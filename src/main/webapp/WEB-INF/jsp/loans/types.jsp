@@ -3,12 +3,12 @@
 <div class="wrap"><table>
   <thead><tr><th>Name</th><th class="num">Interest %</th><th class="num">Max tenure (months)</th><th class="num">Income multiple</th><th>Actions</th></tr></thead>
   <tbody>
-  <c:forEach items="${types}" var="lt">
+  <c:forEach items="${types}" var="ltype">
     <tr>
-      <td><c:out value="${lt.name}"/></td><td class="num">${lt.interestRate}</td><td class="num">${lt.maxTenureMonths}</td><td class="num">${lt.incomeMultiple}</td>
+      <td><c:out value="${ltype.name}"/></td><td class="num">${ltype.interestRate}</td><td class="num">${ltype.maxTenureMonths}</td><td class="num">${ltype.incomeMultiple}</td>
       <td>
-        <a class="btn small secondary" href="${ctx}/loans/types/${lt.id}/edit">Edit</a>
-        <form class="inline confirm-delete" method="post" action="${ctx}/loans/types/${lt.id}/delete"><button class="btn small danger">Delete</button></form>
+        <a class="btn small secondary" href="${ctx}/loans/types/${ltype.id}/edit">Edit</a>
+        <form class="inline confirm-delete" method="post" action="${ctx}/loans/types/${ltype.id}/delete"><button class="btn small danger">Delete</button></form>
       </td>
     </tr>
   </c:forEach>
