@@ -7,8 +7,8 @@
 **Building Database Applications - Staff Graded Assignment 2**  
 **Full-Stack Database Application Development**  
 **Project:** Banking & Loan Management System (Project No. 9)  
-**Student Name:** [Your Name]  
-**Roll Number:** [Your Roll Number]  
+**Student Name:** Student  
+**Roll Number:** 2024eb03136  
 **Date:** November 15, 2026  
 
 ---
@@ -16,9 +16,9 @@
 ## 2. Student Details
 | Field | Value |
 |---|---|
-| Name | [Your Name] |
-| Roll number | [Your Roll Number] |
-| Email | [Your Email] |
+| Name | Student |
+| Roll number | 2024eb03136 |
+| Email | 2024eb03136@student.ac.in |
 | Course | Building Database Applications |
 
 ---
